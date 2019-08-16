@@ -18,7 +18,7 @@
 #include <string.h>
 #include <iostream>
 
-//LibroCalificaciones::LibroCalificaciones(const std::string nombreCurso, int[ESTUDIANTES][EXAMENES]){
+LibroCalificaciones::LibroCalificaciones(const std::string nombreCurso, int[][]){
     nombreCurso="";
     for(int estudiante;estudiante<ESTUDIANTES;estudiante++)
          for(int examen=0; examen<EXAMENES;estudiante++)

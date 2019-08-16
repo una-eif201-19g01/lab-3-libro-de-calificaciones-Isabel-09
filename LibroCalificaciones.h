@@ -30,7 +30,7 @@ class LibroCalificaciones {
      
 public:
     LibroCalificaciones();
-    LibroCalificaciones(const std::string nombreCurso,int[ESTUDIANTES][EXAMENES]);
+    LibroCalificaciones(const std::string nombreCurso,int[][]);
    std:: string obtenerReporteNotas();
    std::string obtenerReporteNotasMaxMin();
 

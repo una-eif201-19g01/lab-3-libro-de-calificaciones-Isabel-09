@@ -18,5 +18,7 @@
 #include "LibroCalificaciones.h"
 
 int main() {
+ std::cout<<"\nLas siguientes son las notas del curso [Curso Progra I]: "
 
+         return 0;
 }

@@ -19,11 +19,29 @@
 
 #include <string>
 
-class LibroCalificaciones {
+    static const  int ESTUDIANTES=10;
+    static const int EXAMENES=3 ;
+    class LibroCalificaciones {
+    private:
+        std::string nombreCurso;
+        int Calificaciones[ESTUDIANTES][EXAMENES];
+        //metodos
+        int obtenerNotaMinima();
+        int obtenerNotaMaxima();
+        double obtenerPromedio();
 
-public:
+    public:
+        LibroCalificaciones();
+        LibroCalificaciones(std::string &nombreCur, int arregloCalificaciones[ESTUDIANTES][EXAMENES]);
+        std:: string obtenerReporteNotas();
+        std::string obtenerReporteNotasMaxMin();
 
-};
+        void setNombreCurso(std::string nombreCur) ;
+
+        std::string getNombreCurso() const ;
+
+    };
 
 
-#endif //CALIFICACIONES_LIBROCALIFICACIONES_H
+#endif
+

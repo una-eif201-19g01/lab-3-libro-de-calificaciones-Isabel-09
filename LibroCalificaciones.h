@@ -19,29 +19,27 @@
 
 #include <string>
 
-    static const  int ESTUDIANTES=10;
-    static const int EXAMENES=3 ;
-    class LibroCalificaciones {
-    private:
-        std::string nombreCurso;
-        int Calificaciones[ESTUDIANTES][EXAMENES];
-        //metodos
-        int obtenerNotaMinima();
-        int obtenerNotaMaxima();
-        double obtenerPromedio();
+static const  int ESTUDIANTES=10;
+static const int EXAMENES=3 ;
+class LibroCalificaciones {
 
-    public:
-        LibroCalificaciones();
-        LibroCalificaciones(std::string &nombreCur, int arregloCalificaciones[ESTUDIANTES][EXAMENES]);
-        std:: string obtenerReporteNotas();
-        std::string obtenerReporteNotasMaxMin();
+    std::string nombreCurso;
+    int Calificaciones[ESTUDIANTES][EXAMENES];
+    //metodos
+    int obtenerNotaMinima();
+    int obtenerNotaMaxima();
+    double obtenerPromedio();
 
-        void setNombreCurso(std::string nombreCur) ;
+public:
+    LibroCalificaciones( std::string &nombreCurso,int ArregloCalificaciones[ESTUDIANTES][EXAMENES]);
+    std:: string obtenerReporteNotas();
+    std::string obtenerReporteNotasMaxMin();
 
-        std::string getNombreCurso() const ;
+    void setNombreCurso(std::string nombreCur) {
+    }
 
-    };
 
+};
 
 #endif
 

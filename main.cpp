@@ -18,7 +18,7 @@
 #include "LibroCalificaciones.h"
 
 int main() {
-    string &curso =	"Curso progra I";
+    string curso =	"Curso progra I";
     static const  int ESTUDIANTES=10;
     static const  int EXAMENES=3;
     int listaCalificaciones[ESTUDIANTES][EXAMENES]= {
@@ -30,4 +30,6 @@ int main() {
     cout<<librocalificaciones.obtenerReporteNotas()<<endl;
     cout<<librocalificaciones.obtenerReporteNotasMaxMin()<<endl;
 
+
+         return 0;
 }

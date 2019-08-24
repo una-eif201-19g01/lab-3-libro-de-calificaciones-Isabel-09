@@ -18,28 +18,29 @@
 #define CALIFICACIONES_LIBROCALIFICACIONES_H
 
 #include <string>
+static const int ESTUDIANTES = 10;
+static const int EXAMENES = 3;
 
-static const  int ESTUDIANTES=10;
-static const int EXAMENES=3 ;
 class LibroCalificaciones {
-
-    std::string nombreCurso;
-    int Calificaciones[ESTUDIANTES][EXAMENES];
-    //metodos
-    int obtenerNotaMinima();
-    int obtenerNotaMaxima();
-    double obtenerPromedio();
+private:
+	std::string nombreCurso;
+	int Calificaciones[ESTUDIANTES][EXAMENES];
+	//metodos
+	int obtenerNotaMinima();
+	int obtenerNotaMaxima();
+	double obtenerPromedio(int[], int);
 
 public:
-    LibroCalificaciones( std::string &nombreCurso,int ArregloCalificaciones[ESTUDIANTES][EXAMENES]);
-    std:: string obtenerReporteNotas();
-    std::string obtenerReporteNotasMaxMin();
-
-    void setNombreCurso(std::string nombreCur) {
-    }
-
+	LibroCalificaciones();
+	LibroCalificaciones(const std::string&, int[ESTUDIANTES][EXAMENES]);
+	std::string obtenerReporteNotas();
+	std::string obtenerReporteNotasMaxMin();
+	void setNombreCurso(std::string nombreCurso);
+	std::string getNombreCurso() const;
 
 };
+
+
 
 #endif
 
